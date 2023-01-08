@@ -3,6 +3,6 @@ from django.urls import path, include
 from . import views
 
 urlpatterns = [
-    path('admin/', admin.site.urls),
-    path('', views.home),
-    path('feed', views.newsfeed, name="feed"),]
+    path('home', views.home, name="home"),
+    path('feed', views.newsfeed, name="feed"),
+    path('signup', views.signup, name="signup"),]
